@@ -1,0 +1,12 @@
+h1,
+h2 {
+  color: white;
+}
+#demo {
+  border: 2px solid black;
+  height: 100px;
+  overflow: scroll;
+}
+#drop {
+  box-shadow: 4px 6px 25px 0px rgba(0, 0, 0, 0.75);
+}
