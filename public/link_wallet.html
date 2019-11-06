@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./link.css" />
+    <link
+      rel="stylesheet"
+      href="E:/guvi/bootstrap-4.3.1-dist/css/bootstrap.css"
+    />
+  </head>
+  <body background="./whatsapp.jpg">
+    <div class="navbar bg-dark text-light"><h1>LINK WALLET</h1></div>
+    <div class="container col-11">
+      <div class="row col-12">
+        <div class=" row col-6">
+          <div
+            class="col-12 mt-2 pb-3 pt-3 bg-dark border rounded "
+            style="box-shadow : 4px 6px 25px 0px rgba(0,0,0,0.75)"
+          >
+            <h1>Find your links</h1>
+            <span><h2>Search using Tags :</h2></span>
+            <input
+              type="text"
+              id="stag"
+              placeholder="  tag1 tag2 tag3...  "
+              style="width: 400px"
+            />
+            <button class="btn btn-primary" onclick="search()">
+              <h3>Find</h3></button
+            ><br /><br />
+            <span><h2>Your link :</h2></span>
+            <div class="bg-light" id="demo"></div>
+          </div>
+          <div
+            id="drop"
+            class=" col-12 mt-5  pb-3 pt-3 bg-dark border rounded "
+          >
+            <h1>Save your link</h1>
+            <span><h2>Link :</h2></span>
+            <input
+              type="url"
+              id="link"
+              placeholder="https://www.youtube.com/watch?v=hYqID6yCV7g"
+              style="width: 400px"
+            />&nbsp; <br /><br /><span><h2>Add some Tags :</h2></span>
+            <input
+              type="text"
+              id="tags"
+              placeholder="  tag1 tag2 tag3...  "
+              style="width: 400px"
+            />
+            <button class="btn btn-primary" onclick="save()">
+              <h3>Save</h3>
+            </button>
+          </div>
+        </div>
+        <div
+          class=" col-6 mt-2 ml-3 pb-3 pt-3 bg-dark border rounded "
+          style="box-shadow : 4px 6px 25px 0px rgba(0,0,0,0.75)"
+        >
+          <h2 style="display:inline">Saved links :</h2>
+          <span
+            ><button class="btn btn-primary" onclick="showall()">
+              <h3>Show all</h3>
+            </button></span
+          >
+          &nbsp;
+          <button
+            class="btn btn-primary"
+            id="hide"
+            onclick="document.getElementById('all').innerHTML='' "
+          >
+            <h3>Hide all</h3>
+          </button>
+          <div class="border rounded mt-2" id="all"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="./linkwallet.js"></script>
+  </body>
+</html>
