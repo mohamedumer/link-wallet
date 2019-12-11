@@ -1,12 +1,17 @@
-h1,
-h2 {
+h3,h1,
+h2,h4,h5 {
   color: white;
 }
 #demo {
-  border: 2px solid black;
+  
   height: 100px;
   overflow: scroll;
 }
 #drop {
   box-shadow: 4px 6px 25px 0px rgba(0, 0, 0, 0.75);
+}
+#all{
+  overflow-y: scroll;
+  height:450px;
+  overflow-x: hidden;
 }
