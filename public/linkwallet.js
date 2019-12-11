@@ -66,9 +66,9 @@ function showall() {
           document.getElementById("all").innerHTML +=
             "<div class='bg-warning border ' > <a href='" +
             a.word[i].link +
-            "' target='_blank'><h4>" +
+            "' target='_blank'><h5>" +
             a.word[i].link +
-            "</h4></a>Tags : <p>" +
+            "</h5></a>Tags : <p>" +
             a.word[i].tag +
             "</p></div><br>";
         }
